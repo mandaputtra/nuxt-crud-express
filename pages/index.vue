@@ -17,21 +17,30 @@
       submit
     </v-btn>
   </v-form>
+  <pre>{{ data }}</pre>
   </v-layout>
 </template>
 
 <script>
 export default {
+  mounted(){
+    return this.$axios.$get('api/v1/test')
+      .then(value => {
+        console.log(value)
+        this.data = value.test
+      })
+      .catch(err => console.log(err))
+  },
   data: () => {
     return {
       valid: true,
-      title: ''
+      title: '',
+      data: ''
     }
   },
   methods: {
     submit() {
-      // console.log(this.title)
-      this.$axios.post('api/v1/test', {
+      this.$axios.$post('api/v1/test', {
         title: this.title
       })
       .then(value => console.log(value))
