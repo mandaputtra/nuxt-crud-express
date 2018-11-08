@@ -1,6 +1,11 @@
-# nuxt-crud-express
+# nuxt-crud-express (WIP)
 
-> My stylish Nuxt.js project
+> Simple basic nuxtjs CRUD with express and mongo
+
+## Setup backend
+
+Backend things are placed on the server folder, please config the database by your database
+dont forget it. thanks still onprogrees on the UI and many. will add some auth. and use env variable in nuxt.
 
 ## Build Setup
 
