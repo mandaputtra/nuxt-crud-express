@@ -3,6 +3,7 @@ const express = require('express')
 const logger = require('morgan')
 const bodyParser = require('body-parser')
 const passport = require('passport')
+const cors = require('cors')
 const pe = require('parse-error')
 const consola = require('consola')
 const { Nuxt, Builder } = require('nuxt')
@@ -10,6 +11,7 @@ const v1 = require('./routes/v1')
 
 // Initialize express
 const app = express()
+app.use(cors())
 
 // Apps config placed here will make env later connection and etc
 const host = process.env.HOST || '127.0.0.1'
