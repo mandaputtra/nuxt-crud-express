@@ -1,6 +1,8 @@
 # nuxt-crud-express (WIP)
 
 > Simple basic nuxtjs CRUD with express and mongo
+Using nuxt with express and running it the same times are consider the bad practice (when you got bunch of route it will get harder to mantain). I'm done with CR thinghs here and maybe you will get it to implement UD. So feel free to implement it.
+
 
 ## Setup backend
 
